@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="800.0" style="-fx-background-color: #363638;" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameRPG.SteamSignInController">
+   <children>
+      <TextField fx:id="loginUsernameField" editable="false" layoutX="55.0" layoutY="180.0" prefHeight="40.0" prefWidth="650.0" style="-fx-background-color: #545455;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="loginPasswordField" layoutX="55.0" layoutY="265.0" prefHeight="40.0" prefWidth="650.0" style="-fx-background-color: #545455;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <ImageView blendMode="MULTIPLY" fitHeight="85.0" fitWidth="164.0" layoutX="619.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/SteamLogoNEW.png" />
+         </image></ImageView>
+      <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" graphicTextGap="0.0" layoutX="55.0" layoutY="240.0" prefHeight="22.0" prefWidth="350.0" style="-fx-background-color: #0000;" text="Имя пользователя" textFill="#d7cdc7">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="loginSignInButton" layoutX="55.0" layoutY="495.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="650.0" style="-fx-background-color: #00c3f0;" text="ЗАРЕГЕСТРИРОВАТЬСЯ" textFill="WHITE">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="loginDoSave" alignment="BOTTOM_LEFT" layoutX="52.0" layoutY="403.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="435.0" selected="true" text="Я потдверждаю, что мне исполнилось 13 лет, и соглашаюсь с условаиями " textFill="#d6cdc7" />
+      <Hyperlink alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="487.0" layoutY="390.0" prefHeight="40.0" prefWidth="195.0" text="соглашения подписчика Steam." textFill="#d7cdc7" underline="true" />
+      <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" graphicTextGap="0.0" layoutX="55.0" layoutY="155.0" prefHeight="22.0" prefWidth="350.0" style="-fx-background-color: #0000;" text="Адрес эл. почты" textFill="#d7cdc7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" graphicTextGap="0.0" layoutX="55.0" layoutY="325.0" prefHeight="22.0" prefWidth="350.0" style="-fx-background-color: #0000;" text="Пароль" textFill="#d7cdc7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="loginPasswordField1" layoutX="54.0" layoutY="350.0" prefHeight="40.0" prefWidth="650.0" style="-fx-background-color: #545455;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" graphicTextGap="0.0" layoutX="52.0" layoutY="64.0" prefHeight="57.0" prefWidth="482.0" style="-fx-background-color: #0000;" text="СОЗДАНИЕ АККАУНТА" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>
